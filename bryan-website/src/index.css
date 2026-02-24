@@ -15,11 +15,18 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     user-select: none;
+    cursor: url("/cursors/Wii-Cursor.png") 0 0, default;
   }
 
   #root {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+  }
+
+  button:hover,
+  a:hover,
+  .cursor-pointer:hover {
+    cursor: url("/cursors/wii-pointer-blue.png") 0 0, pointer;
   }
 }
