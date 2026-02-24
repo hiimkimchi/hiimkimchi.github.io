@@ -1,42 +1,52 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.wii-bg {
+  background-color: #dcdcdc;
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 3px,
+    rgba(0, 0, 0, 0.025) 3px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.wii-tile {
+  transition: transform 0.12s ease-out, box-shadow 0.12s ease-out;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wii-tile:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.wii-tile:active {
+  transform: scale(0.98);
 }
 
-.card {
-  padding: 2em;
+.wii-empty {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.read-the-docs {
-  color: #888;
+.wii-clock {
+  font-family: "Trebuchet MS", system-ui, sans-serif;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.wii-disc {
+  background: radial-gradient(
+    circle,
+    #c8c8c8 12%,
+    #e8e8e8 13%,
+    #b8b8b8 28%,
+    #e0e0e0 29%,
+    #d0d0d0 55%,
+    #c0c0c0 56%,
+    #d8d8d8 100%
+  );
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
