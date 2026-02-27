@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+
 import BottomBar from "../components/BottomBar";
+import BackToHome from "../components/BackToHome";
 
 export default function Blog() {
   return (
@@ -9,12 +10,7 @@ export default function Blog() {
           Blog
         </h1>
         <p className="text-gray-500 text-sm sm:text-base mb-8">Coming soon...</p>
-        <Link
-          to="/"
-          className="text-wii-ring hover:text-sky-600 font-semibold text-sm sm:text-base transition-colors"
-        >
-          ← Back to Home
-        </Link>
+        <BackToHome />
       </div>
       <BottomBar />
     </div>
