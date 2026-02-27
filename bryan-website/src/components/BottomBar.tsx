@@ -10,7 +10,7 @@ export default function BottomBar() {
       <svg
         viewBox="0 0 1440 60"
         preserveAspectRatio="none"
-        className="w-full h-8 sm:h-10 md:h-12 block"
+        className="w-full h-10 sm:h-12 md:h-14 block"
       >
         <defs>
           <linearGradient id="waveGrad" x1="0" y1="0" x2="0" y2="1">
@@ -26,7 +26,7 @@ export default function BottomBar() {
       </svg>
 
       {/* Bar */}
-      <div className="bg-gradient-to-b from-[#b8b8b8] to-[#a8a8a8] px-4 sm:px-8 py-2.5 sm:py-3 flex items-center justify-between">
+      <div className="bg-gradient-to-b from-[#b8b8b8] to-[#a8a8a8] px-5 sm:px-10 py-3.5 sm:py-4 flex items-center justify-between">
         {/* Left: Wii button + SD card */}
         <SideButton 
           label="Github" 
@@ -36,14 +36,14 @@ export default function BottomBar() {
         {/* Center: Clock + Date */}
         <div className="flex flex-col items-center">
           <div className="wii-clock flex items-baseline">
-            <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-700">
+            <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-700">
               {displayHours}:{minutes}
             </span>
-            <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-gray-600 ml-1">
+            <span className="text-xs sm:text-sm md:text-base font-semibold text-gray-600 ml-1.5">
               {ampm}
             </span>
           </div>
-          <span className="text-[10px] sm:text-xs md:text-sm text-gray-600 font-medium">
+          <span className="text-xs sm:text-sm md:text-base text-gray-600 font-medium">
             {dayName} {month}/{date}
           </span>
         </div>
