@@ -1,5 +1,6 @@
 import ChannelTile from "../components/ChannelTile";
 import BottomBar from "../components/BottomBar";
+import discImg from "../assets/disc.png";
 
 const AVATAR_COLORS = [
   "bg-amber-300",
@@ -25,9 +26,11 @@ export default function Homescreen() {
           {/* Disc Channel → Recents */}
           <ChannelTile className="bg-white pt-3 pb-2 flex flex-col items-center" to="/recents">
             <div className="flex-1 flex items-center justify-center">
-              <div className="wii-disc w-24 h-24 rounded-full flex items-center justify-center">
-                <div className="w-4 h-4 rounded-full bg-white shadow-inner" />
-              </div>
+              <img
+                src={discImg}
+                alt="Disc"
+                className="w-24 h-24 object-contain drop-shadow-sm"
+              />
             </div>
           </ChannelTile>
 
