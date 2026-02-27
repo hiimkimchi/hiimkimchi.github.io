@@ -8,7 +8,7 @@ function BackToHome() {
                 to="/"
                 className="text-wii-ring hover:text-sky-600 font-semibold text-sm sm:text-base transition-colors"
             >
-                ← Back to Home <img src={homeIcon} alt="Home" className="w-8 h-8 inline-block mb-2 ml-1" />
+                ← <img src={homeIcon} alt="Home" className="w-8 h-8 inline-block mb-2 ml-1" />
             </Link>
         </div>
     );
