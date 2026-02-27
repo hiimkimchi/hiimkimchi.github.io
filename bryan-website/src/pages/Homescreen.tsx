@@ -115,8 +115,13 @@ export default function Homescreen() {
           {/* Empty tiles */}
           <ChannelTile isEmpty />
           <ChannelTile isEmpty />
-          <ChannelTile isEmpty />
-          <ChannelTile isEmpty />
+          
+          {/* Additional Empty tiles for non-mobile view */}
+          {Array.from({ length: 4 }).map((_, i) => (
+            <div key={i} className="hidden md:block">
+              <ChannelTile isEmpty />
+            </div>
+          ))}
         </div>
       </div>
 
