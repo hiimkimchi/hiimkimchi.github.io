@@ -18,30 +18,30 @@ const AVATAR_COLORS = [
 
 export default function Homescreen() {
   return (
-    <div className="wii-bg h-screen flex flex-col">
+    <div className="wii-bg min-h-screen flex flex-col">
       {/* Channel Grid Area */}
-      <div className="flex-1 flex items-center justify-center px-6 sm:px-10 md:px-20 relative">
-        <div className="grid grid-cols-4 gap-2 sm:gap-3 md:gap-4 w-full max-w-5xl">
-          {/* === Row 1 === */}
-
+      <div className="flex-1 flex items-center justify-center px-4 sm:px-8 md:px-16 relative mt-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3.5 md:gap-4 w-full max-w-5xl">
           {/* Disc Channel → Home */}
-          <ChannelTile className="bg-white items-center justify-center">
-            <div className="wii-disc w-14 h-14 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center">
-              <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white shadow-inner" />
+          <ChannelTile className="bg-white pt-3 pb-2 flex flex-col items-center">
+            <div className="flex-1 flex items-center justify-center">
+              <div className="wii-disc w-24 h-24 rounded-full flex items-center justify-center">
+                <div className="w-4 h-4 rounded-full bg-white shadow-inner" />
+              </div>
             </div>
           </ChannelTile>
 
           {/* Mii Channel → About Me */}
           <ChannelTile className="bg-white" to="/about">
-            <div className="flex-1 flex flex-wrap items-center justify-center gap-0.5 sm:gap-1 p-1.5 sm:p-2.5 content-center">
+            <div className="flex-1 flex flex-wrap items-center justify-center gap-1 p-2 content-center">
               {AVATAR_COLORS.map((color, i) => (
                 <div
                   key={i}
-                  className={`w-3.5 h-4 sm:w-5 sm:h-6 md:w-6 md:h-7 rounded-full ${color} border border-white shadow-sm`}
+                  className={`w-5 h-6 rounded-full ${color} border border-white shadow-sm`}
                 />
               ))}
             </div>
-            <div className="text-[9px] sm:text-[11px] md:text-xs text-gray-500 pb-1 sm:pb-1.5 text-center font-medium">
+            <div className="text-xs sm:text-sm text-gray-500 pb-1 sm:pb-1.5 text-center font-medium">
               About Me
             </div>
           </ChannelTile>
@@ -49,42 +49,40 @@ export default function Homescreen() {
           {/* Photo Channel → Projects */}
           <ChannelTile className="bg-white" to="/projects">
             <div className="bg-gradient-to-r from-amber-700 to-amber-500 px-2 py-0.5 sm:py-1 w-full">
-              <span className="text-white text-[9px] sm:text-[11px] md:text-xs font-bold drop-shadow-sm">
+              <span className="text-white text-xs sm:text-sm font-bold drop-shadow-sm">
                 Projects
               </span>
             </div>
             <div className="flex-1 flex items-center justify-center gap-1 sm:gap-1.5 p-1.5 sm:p-2">
-              <div className="w-7 h-5 sm:w-10 sm:h-8 md:w-14 md:h-10 bg-emerald-400 rounded-sm shadow-sm -rotate-3" />
-              <div className="w-7 h-5 sm:w-10 sm:h-8 md:w-14 md:h-10 bg-amber-400 rounded-sm shadow-sm rotate-2 -ml-1" />
-              <div className="hidden sm:block w-10 h-8 md:w-14 md:h-10 bg-sky-400 rounded-sm shadow-sm -rotate-1 -ml-1" />
+              <div className="w-14 h-10 bg-emerald-400 rounded-sm shadow-sm -rotate-3" />
+              <div className="w-14 h-10 bg-amber-400 rounded-sm shadow-sm rotate-2 -ml-1" />
+              <div className="hidden sm:block w-14 h-10 bg-sky-400 rounded-sm shadow-sm -rotate-1 -ml-1" />
             </div>
           </ChannelTile>
 
           {/* Wii Shop Channel → Resume */}
           <ChannelTile className="bg-white items-center justify-center gap-1 sm:gap-2" to="/resume">
             <svg
-              className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 text-sky-400"
+              className="w-14 h-14 text-sky-400"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
               <path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm-2 10V9.5l4 2.5-4 2.5V14z" />
             </svg>
-            <span className="text-[9px] sm:text-[11px] md:text-xs text-sky-500 font-bold">
+            <span className="text-xs sm:text-sm text-sky-500 font-bold">
               Resume
             </span>
           </ChannelTile>
 
-          {/* === Row 2 === */}
-
           {/* Forecast Channel → Skills */}
           <ChannelTile className="bg-gradient-to-b from-blue-800 via-blue-600 to-blue-500" to="/skills">
             <div className="p-1.5 sm:p-2.5 md:p-3 flex flex-col h-full">
-              <span className="text-white text-[9px] sm:text-[11px] md:text-xs font-bold drop-shadow">
+              <span className="text-white text-xs sm:text-sm font-bold drop-shadow">
                 Skills
               </span>
               <div className="flex-1 flex items-center justify-center">
                 <svg
-                  className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 text-white/40"
+                  className="w-16 h-16 text-white/40"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth={1.5}
@@ -99,12 +97,12 @@ export default function Homescreen() {
           {/* News Channel → Blog */}
           <ChannelTile className="bg-gradient-to-b from-green-900 via-green-700 to-green-600" to="/blog">
             <div className="p-1.5 sm:p-2.5 md:p-3 flex flex-col h-full">
-              <span className="text-white text-[9px] sm:text-[11px] md:text-xs font-bold drop-shadow">
+              <span className="text-white text-xs sm:text-sm font-bold drop-shadow">
                 Blog
               </span>
               <div className="flex-1 flex items-center justify-center">
                 <svg
-                  className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 text-green-400/40"
+                  className="w-16 h-16 text-green-400/40"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -117,24 +115,9 @@ export default function Homescreen() {
           {/* Empty tiles */}
           <ChannelTile isEmpty />
           <ChannelTile isEmpty />
-
-          {/* === Row 3 === */}
-          <ChannelTile isEmpty />
-          <ChannelTile isEmpty />
           <ChannelTile isEmpty />
           <ChannelTile isEmpty />
         </div>
-
-        {/* Right navigation arrow */}
-        <button className="absolute right-1 sm:right-4 md:right-10 top-1/2 -translate-y-1/2 text-sky-400/60 hover:text-sky-400 transition-colors bg-transparent border-0 cursor-pointer p-1">
-          <svg
-            className="w-5 h-8 sm:w-6 sm:h-12 md:w-8 md:h-14"
-            fill="currentColor"
-            viewBox="0 0 24 40"
-          >
-            <path d="M2 0 L22 20 L2 40 Z" />
-          </svg>
-        </button>
       </div>
 
       {/* Bottom Bar */}
