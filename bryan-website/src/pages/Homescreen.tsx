@@ -22,8 +22,8 @@ export default function Homescreen() {
       {/* Channel Grid Area */}
       <div className="flex-1 flex items-center justify-center px-4 sm:px-8 md:px-16 relative mt-4">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3.5 md:gap-4 w-full max-w-5xl">
-          {/* Disc Channel → Home */}
-          <ChannelTile className="bg-white pt-3 pb-2 flex flex-col items-center">
+          {/* Disc Channel → Recents */}
+          <ChannelTile className="bg-white pt-3 pb-2 flex flex-col items-center" to="/recents">
             <div className="flex-1 flex items-center justify-center">
               <div className="wii-disc w-24 h-24 rounded-full flex items-center justify-center">
                 <div className="w-4 h-4 rounded-full bg-white shadow-inner" />
@@ -115,7 +115,7 @@ export default function Homescreen() {
           {/* Empty tiles */}
           <ChannelTile isEmpty />
           <ChannelTile isEmpty />
-          
+
           {/* Additional Empty tiles for non-mobile view */}
           {Array.from({ length: 4 }).map((_, i) => (
             <div key={i} className="hidden md:block">
