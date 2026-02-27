@@ -19,7 +19,7 @@ export default function ChannelTile({
     return (
       <div className="wii-empty rounded-lg aspect-[4/3] flex items-center justify-center">
         <span className="text-white/25 text-lg font-bold italic tracking-wider">
-          Wii
+          Hiimkimchi
         </span>
       </div>
     );
