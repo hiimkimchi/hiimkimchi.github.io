@@ -8,7 +8,7 @@ export default function AboutMe() {
         <div className="w-full max-w-3xl px-2 sm:px-4 text-center">
           {/* Header */}
           <p className="text-s font-semibold tracking-[0.25em] text-wii-ring mb-1">
-            ABOUT ME
+            ABOUT ME CHANNEL
           </p>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2">
             Bryan Kim

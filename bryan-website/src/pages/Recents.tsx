@@ -8,7 +8,7 @@ export default function Recents() {
         <div className="w-full max-w-3xl px-2 sm:px-4">
           <div className="text-center mb-8">
             <p className="text-s font-semibold tracking-[0.25em] text-wii-ring mb-1">
-              DISC CHANNEL
+              RECENT ACTIVITY CHANNEL
             </p>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">
                 What I'm on
@@ -16,7 +16,7 @@ export default function Recents() {
           </div>
 
           <div className="grid gap-4 sm:gap-5">
-            <section className="bg-white/70 backdrop-blur-sm rounded-xl shadow-md px-5 py-4 sm:px-6 sm:py-5">
+            <section className="bg-white/40 backdrop-blur-sm rounded-xl px-5 py-4 sm:px-6 sm:py-5">
               <h2 className="text-sm sm:text-base font-semibold text-gray-700 mb-1">
                 Current Favorite Album
               </h2>
@@ -26,7 +26,7 @@ export default function Recents() {
               </p>
             </section>
 
-            <section className="bg-white/70 backdrop-blur-sm rounded-xl shadow-md px-5 py-4 sm:px-6 sm:py-5">
+            <section className="bg-white/40 backdrop-blur-sm rounded-xl px-5 py-4 sm:px-6 sm:py-5">
               <h2 className="text-sm sm:text-base font-semibold text-gray-700 mb-1">
                 Current Favorite Video Game
               </h2>
@@ -36,7 +36,7 @@ export default function Recents() {
               </p>
             </section>
 
-            <section className="bg-white/70 backdrop-blur-sm rounded-xl shadow-md px-5 py-4 sm:px-6 sm:py-5">
+            <section className="bg-white/40 backdrop-blur-sm rounded-xl px-5 py-4 sm:px-6 sm:py-5">
               <h2 className="text-sm sm:text-base font-semibold text-gray-700 mb-1">
                 Next Event Coming Up
               </h2>
