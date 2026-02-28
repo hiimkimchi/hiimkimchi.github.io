@@ -12,7 +12,7 @@ export default function Projects() {
               PROJECTS CHANNEL
             </p>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">
-              Things I've built and shipped.
+              Things I've built/shipped.
             </h1>
           </div>
 
