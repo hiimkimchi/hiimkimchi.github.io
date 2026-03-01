@@ -6,3 +6,4 @@ This is not for monetary gain, this is strictly a biography website for personal
 
 Hosted on https://hiimkimchi.github.io/  
 Wii Cursor by stefanotinaglia99 (http://www.rw-designer.com/user/22903)
+Icons for skills made with https://shields.io/ 
