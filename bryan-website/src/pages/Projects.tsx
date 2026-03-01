@@ -39,7 +39,7 @@ export default function Projects() {
               repoUrl="https://app.vetrec.io"
               tagline="Current Employer"
               type={ProjectCardType.WEBSITE}
-              description="Contributed to user experience features (style customization, templates refactor, etc.) and main workflow improvements pertaining to clinical accuracy and latency improvements."
+              description="Contributed to user personalization and workflow features (style customization, templates refactor, etc.) and main workflow improvements pertaining to clinical accuracy and latency improvements."
               techs={[]}
             />
           </div>

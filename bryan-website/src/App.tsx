@@ -5,7 +5,7 @@ import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Skills from "./pages/Skills";
-import Blog from "./pages/Blog";
+import Collections from "./pages/Collections";
 import Recents from "./pages/Recents";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/collections" element={<Collections />} />
         <Route path="/recents" element={<Recents />} />
       </Routes>
     </BrowserRouter>
