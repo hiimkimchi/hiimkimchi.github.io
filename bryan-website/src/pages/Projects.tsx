@@ -42,6 +42,9 @@ export default function Projects() {
               description="Contributed to user personalization and workflow features (style customization, templates refactor, etc.) and main workflow improvements pertaining to clinical accuracy and latency improvements."
               techs={[]}
             />
+            <p className="text-gray-500 text-sm sm:text-base text-center">
+              and more! will add them when i remember to come back and edit this website
+            </p>
           </div>
 
           <BackToHome />
