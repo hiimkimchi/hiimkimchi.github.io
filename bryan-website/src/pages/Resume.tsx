@@ -15,7 +15,7 @@ export default function Resume() {
             Because the Resume Channel icon looked good on the homepage lol.
           </p>
           <p className="text-gray-700 text-base sm:text-lg md:text-xl">
-            If you're interested in my background or experience, please reach
+            If you're interested in my background or experience in resume form, please reach
             out via the email icon in the bottom-right corner or my LinkedIn{" "}
             <a
               href="https://www.linkedin.com/in/bryankimchi/"
