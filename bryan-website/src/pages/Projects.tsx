@@ -12,7 +12,7 @@ export default function Projects() {
               PROJECTS CHANNEL
             </p>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">
-              Things I've built/shipped.
+              Things I've Built
             </h1>
           </div>
 
@@ -21,7 +21,7 @@ export default function Projects() {
               title="Sync.EQ"
               repoUrl="https://github.com/hiimkimchi/Sync.EQ-Prototype"
               tagline="Equalize Your Connections"
-              description="A social platform for creatives — built with a Node/Express backend, Angular frontend, MongoDB, Auth0, and Azure Storage."
+              description="A social platform for creatives specifically looking to connect with others interested in music, film, art, design, etc."
               techs={["Node.js", "Express", "Angular", "MongoDB", "Auth0", "Azure", "Docker"]}
             />
           </div>

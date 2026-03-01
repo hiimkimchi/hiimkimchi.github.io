@@ -43,6 +43,8 @@ export default function AboutMe() {
                 Hobbies & Interests
               </h3>
               <p className="text-gray-600 text-sm sm:text-base">
+                Been loving to create music on my laptop for a while now. 
+                Also love coding small little projects for personal enjoyment.
                 Big collector of music, retro video games, and manga. Also a huge fan of
                 occasional travel and going to live concerts and festivals.
               </p>
