@@ -23,6 +23,11 @@ export default function Homescreen() {
 
           {/* Mii Channel → About Me */}
           <ChannelTile className="bg-white" to="/about">
+            <div className="p-1.5 sm:p-2 w-full">
+              <span className="text-gray-600 text-xs sm:text-sm font-bold">
+                About Me
+              </span>
+            </div>
             <div className="flex-1 flex flex-wrap items-center justify-center gap-1 p-2 content-center">
               {AVATAR_COLORS.map((color, i) => (
                 <div
@@ -30,9 +35,6 @@ export default function Homescreen() {
                   className={`w-5 h-6 rounded-full ${color} border border-white shadow-sm`}
                 />
               ))}
-            </div>
-            <div className="text-xs sm:text-sm text-gray-500 pb-1 sm:pb-1.5 text-center font-medium">
-              About Me
             </div>
           </ChannelTile>
 
@@ -51,11 +53,15 @@ export default function Homescreen() {
           </ChannelTile>
 
           {/* Wii Shop Channel → Resume */}
-          <ChannelTile className="bg-white items-center justify-center gap-1 sm:gap-2" to="/resume">
-            <FileText className="w-14 h-14 text-sky-400" strokeWidth={1.5} />
-            <span className="text-xs sm:text-sm text-sky-500 font-bold">
-              Resume
-            </span>
+          <ChannelTile className="bg-white" to="/resume">
+            <div className="p-1.5 sm:p-2.5 md:p-3 flex flex-col h-full">
+              <span className="text-sky-600 text-xs sm:text-sm font-bold">
+                Resume
+              </span>
+              <div className="flex-1 flex items-center justify-center">
+                <FileText className="w-14 h-14 text-sky-400" strokeWidth={1.5} />
+              </div>
+            </div>
           </ChannelTile>
 
           {/* Forecast Channel → Skills */}
