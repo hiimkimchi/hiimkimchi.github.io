@@ -1,7 +1,11 @@
+import githubIcon from "../assets/github.png";
+import { ProjectCardType } from "../models/projects";
+
 interface ProjectCardProps {
   title: string;
   repoUrl?: string;
   tagline?: string;
+  type: ProjectCardType;
   description: string;
   techs: string[];
 }
@@ -10,6 +14,7 @@ export default function ProjectCard({
   title,
   repoUrl,
   tagline,
+  type,
   description,
   techs,
 }: ProjectCardProps) {
@@ -24,9 +29,10 @@ export default function ProjectCard({
             href={repoUrl}
             target="_blank"
             rel="noreferrer"
-            className="text-xs sm:text-sm font-semibold text-wii-ring hover:text-sky-600 underline underline-offset-2"
+            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-wii-ring hover:text-sky-600 underline underline-offset-2"
           >
-            View on GitHub →
+            {type === ProjectCardType.REPO && <img src={githubIcon} alt="" className="w-4 h-4 sm:w-5 sm:h-5" />}
+            {type === ProjectCardType.REPO ? "View on GitHub →" : "View Website →"}
           </a>
         )}
       </div>

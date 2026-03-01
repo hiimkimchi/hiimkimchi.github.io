@@ -1,6 +1,7 @@
 import BottomBar from "../components/BottomBar";
 import BackToHome from "../components/BackToHome";
 import ProjectCard from "../components/ProjectCard";
+import { ProjectCardType } from "../models/projects";
 
 export default function Projects() {
   return (
@@ -21,8 +22,25 @@ export default function Projects() {
               title="Sync.EQ"
               repoUrl="https://github.com/hiimkimchi/Sync.EQ-Prototype"
               tagline="Equalize Your Connections"
+              type={ProjectCardType.REPO}
               description="A social platform for creatives specifically looking to connect with others interested in music, film, art, design, etc."
               techs={["Node.js", "Express", "Angular", "MongoDB", "Auth0", "Azure", "Docker"]}
+            />
+            <ProjectCard
+              title="This Website"
+              repoUrl="https://github.com/hiimkimchi/hiimkimchi.github.io"
+              tagline="My Personal Website"
+              type={ProjectCardType.REPO}
+              description="This website you're currently on! Heavily inspired by the Nintendo Wii."
+              techs={["React", "Tailwind", "Vite"]}
+            />
+            <ProjectCard
+              title="VetRec"
+              repoUrl="https://app.vetrec.io"
+              tagline="Current Employer"
+              type={ProjectCardType.WEBSITE}
+              description="Contributed to user experience features (style customization, templates refactor, etc.) and main workflow improvements pertaining to clinical accuracy and latency improvements."
+              techs={[]}
             />
           </div>
 
