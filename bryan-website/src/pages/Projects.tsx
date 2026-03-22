@@ -27,6 +27,14 @@ export default function Projects() {
               techs={["Node.js", "Express", "Angular", "MongoDB", "Auth0", "Azure", "Docker"]}
             />
             <ProjectCard
+              title="YTDLP-Gui"
+              repoUrl="https://github.com/hiimkimchi/ytdlp-gui"
+              tagline="A simple GUI for yt-dlp"
+              type={ProjectCardType.REPO}
+              description="A minimal macOS GUI wrapper for yt-dlp built with Tkinter. Supports video and audio downloads with quality/format selectors, a live progress bar, and persistent preferences. Installable via Homebrew."
+              techs={["Python", "Tkinter"]}
+            />
+            <ProjectCard
               title="This Website"
               repoUrl="https://github.com/hiimkimchi/hiimkimchi.github.io"
               tagline="My Personal Website"
